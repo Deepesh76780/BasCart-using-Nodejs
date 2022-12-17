@@ -1,4 +1,5 @@
 const Product = require('../models/product');
+const Cart=require('../models/cart');
 
 exports.getProducts = (req, res, next) => {
   Product.fetchAll(products => {
@@ -9,6 +10,8 @@ exports.getProducts = (req, res, next) => {
     });
   });
 };
+
+// using query params
 
 exports.getProduct=(req,res,next)=>{
   const prodid=req.params.productid;
@@ -43,7 +46,9 @@ exports.getCart = (req, res, next) => {
 
 exports.PostCart=(req,res,next)=>{
   const prodid=req.body.productID;
-  console.log(prodid);
+  Product.findById(prodid,(product)=>{
+      Cart.addProduct(prodid,product.price);
+  })
   res.redirect('/cart')
 }
 
