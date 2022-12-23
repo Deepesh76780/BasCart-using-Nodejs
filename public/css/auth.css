@@ -1,0 +1,19 @@
+.login-form {
+    width: 19rem;
+    max-width: 100%;
+    padding: 50px;
+    margin: auto;
+    display: block;
+    background: rgb(255, 238, 203);
+    border-radius: 1rem;
+}
+
+.btn{
+    margin:10px
+
+}
+
+.form-control {
+    margin:10px;
+    color:rgb(0, 0, 0)
+}
