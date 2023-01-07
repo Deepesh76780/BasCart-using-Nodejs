@@ -12,7 +12,7 @@ const errorController = require('./controllers/error');
 const User = require('./models/user');
 
 const MONGODB_URI =
-  'mongodb+srv://LightYagami:Nana1nani@cluster0.d8s5fbf.mongodb.net/test';
+  'mongodb+srv://LightYagami:Nana1nani@cluster0.d8s5fbf.mongodb.net/shop';
 
 const app = express();
 const store = new MongoDBStore({
@@ -62,11 +62,10 @@ app.use((req, res, next) => {
 app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 app.use(authRoutes);
-
 app.use(errorController.get404);
 
 mongoose
-  .connect(MONGODB_URI,{useNewUrlParser: true, useUnifiedTopology: true})
+  .connect(MONGODB_URI)
   .then(result => {
     app.listen(3000);
   })
