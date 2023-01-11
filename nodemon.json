@@ -1,0 +1,6 @@
+{
+    "env":{
+        "MONGO_USER":"LightYagami",
+        "MONGO_PASSWORD":"Nana1nani"
+    }
+}

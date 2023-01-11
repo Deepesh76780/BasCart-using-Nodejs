@@ -3,25 +3,40 @@
     max-width: 90%;
     margin: auto;
     display: block;
+    background-color: rgb(184, 168, 154);
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid rgb(108, 110, 110);
+    margin-top: 10%;
 }
 
+
+
 .product-item {
-    width: 20rem;
+    width: 25rem;
     max-width: 95%;
     margin: 1rem;
+    background-color: rgba(97, 153, 185, 0.471);
+    border-radius: 20px;
+    border: 2px solid #020202;
 }
 
 .product__title {
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
+    font-family:monospace;
 }
 
 .product__price {
     text-align: center;
-    color: #4d4d4d;
+    color: #000000;
     margin-bottom: 0.5rem;
 }
 
 .product__description {
+    margin-top: 1rem;
+    color: #020202;
+    font-size: 18px;
     text-align: center;
 }

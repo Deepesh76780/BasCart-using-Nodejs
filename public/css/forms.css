@@ -15,9 +15,31 @@
   border: 1px solid #a1a1a1;
   font: inherit;
   border-radius: 2px;
+  background-color: white;
 }
 
 .form-control input:focus,
 .form-control textarea:focus {
-  outline-color: #00695c;
+  outline-color: #232424;
+}
+
+.resetpassword{
+  margin-top: 20px;
+}
+
+.resetpassword a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: rgba(82, 132, 124, 0.81);
+  border: 2px solid #00695c;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.resetpassword a:hover,a:active{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color:  rgb(215, 216, 215);
+  border: 2px solid #030303;
+  padding: 4px;
 }
