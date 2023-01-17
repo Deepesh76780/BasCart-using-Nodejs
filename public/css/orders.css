@@ -32,3 +32,9 @@
     border: 1px solid #000000;
     color: #000000;
 }
+
+.checkit{
+  color: white;
+  font-size: 60px;
+  margin: auto auto;
+}
