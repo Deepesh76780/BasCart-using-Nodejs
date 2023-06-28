@@ -10,7 +10,7 @@ const flash = require("connect-flash");
 
 const errorController = require("./controllers/error");
 const User = require("./models/user");
-
+const port = process.env.port || 3001;
 const MONGODB_URI = process.env.REACT_APP_MONGODB;
 const app = express();
 const store = new MongoDBStore({
@@ -63,9 +63,11 @@ app.use(authRoutes);
 app.use(errorController.get404);
 
 mongoose
-  .connect(MONGODB_URI)
+  .connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => {
-    app.listen(3000);
+    app.listen(port, () => {
+      console.log("running app");
+    });
   })
   .catch((err) => {
     console.log(err);
