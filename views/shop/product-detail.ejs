@@ -3,13 +3,13 @@
 
     <body>
         <%- include('../includes/navigation.ejs') %>
-        <main class="centered">
+        <main class="centered" style="color: aliceblue;">
             <h1><%= product.title %></h1>
             <hr>
             <div class="image">
                 <img src="<%= product.imageUrl %>" alt="<%= product.title %>">
             </div>
-            <h2><%= product.price %></h2>
+            <h2>Price : $<%= product.price %></h2>
             <p><%= product.description %></p>
             <% if (isAuthenticated) { %>
                 <%- include('../includes/add-to-cart.ejs', {product: product}) %>
