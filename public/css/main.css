@@ -10,7 +10,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   background: #41295a;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2F0743, #41295a);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2F0743, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to left, #2F5168, #41295a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 main {
@@ -196,7 +196,7 @@ form {
 }
 
 .card__image {
-  width: 90%;
+  width: 80%;
   margin: auto;
   border-radius: 10px;
 }
@@ -218,7 +218,7 @@ form {
 
 .btn {
   display: inline-block;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   font: inherit;
   border: 1px solid #000000;
@@ -268,16 +268,17 @@ form {
   position: fixed;
   bottom: 0;
   background-color: #292c2f;
+  color:white
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
   font: normal 16px sans-serif;
-  padding: 45px 50px;
+  text-align: center;
+  padding: 3px 3px;
 }
 
 .footer-distributed .footer-left p {
-  color: #8f9296;
+  /* color: #8f9296; */
   font-size: 14px;
   margin: 0;
 }
@@ -315,14 +316,14 @@ form {
 
 .footer-distributed .footer-right {
   float: right;
-  margin-top: 6px;
-  max-width: 180px;
+  /* margin-top: 6px; */
+  /* max-width: 180px; */
 }
 
 .footer-distributed .footer-right a {
   display: inline-block;
-  width: 35px;
-  height: 35px;
+  /* width: 35px;
+  height: 35px; */
   background-color: #33383b;
   border-radius: 2px;
   font-size: 20px;
@@ -337,6 +338,11 @@ form {
 
 .footer-distributed p.footer-links a:hover{text-decoration:underline;}
 
+.productD{
+
+  width: 50%;
+  background: rgba(46, 87, 90, 0.464);
+}
 
 @media (max-width: 600px) {
   .footer-distributed .footer-left, .footer-distributed .footer-right {
